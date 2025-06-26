@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: university-chatbot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    autoDeploy: true

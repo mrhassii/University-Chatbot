@@ -1,0 +1,6 @@
+Flask
+gunicorn
+pyttsx3
+SpeechRecognition
+fpdf
+pyaudio

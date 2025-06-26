@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Chat History</title></head>
+<body>
+<h2>Chat History</h2>
+{% for msg, res in history %}
+<p><strong>You:</strong> {{ msg }}<br><strong>Bot:</strong> {{ res }}</p>
+<hr>
+{% endfor %}
+<a href="/chat">Back</a>
+</body>
+</html>

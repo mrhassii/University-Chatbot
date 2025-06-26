@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Dashboard</title></head>
+<body>
+<h2>Admin Dashboard</h2>
+<h3>Users</h3>
+<ul>{% for u in users %}<li>{{ u[0] }}</li>{% endfor %}</ul>
+<h3>All Chats</h3>
+{% for u, m, r in chats %}
+<p><b>{{ u }}</b>: {{ m }}<br><i>Bot:</i> {{ r }}</p><hr>
+{% endfor %}
+</body>
+</html>
